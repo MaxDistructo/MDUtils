@@ -162,6 +162,17 @@ object Conversions{
         }
 
     }
+    
+     fun readFileAsList(file: File): List<String>? {
+        var lines: List<String>? = null
+        try {
+            lines = Files.readAllLines(Paths.get(file.toURI()))
+        } catch (e: Exception) {
+            Message.throwError(e)
+        }
+
+        return lines
+    }
 
 
 }
