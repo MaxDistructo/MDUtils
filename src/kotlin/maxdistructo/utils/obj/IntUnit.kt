@@ -1,8 +1,8 @@
 package maxdistructo.utils.obj
 
 class IntUnit : Unit{
-  var value : Int
-  var unit : String
+  override var value : Int
+  override val unit : String
   
   constructor(valueIn : Int, unitIn : String){
     value = valueIn
