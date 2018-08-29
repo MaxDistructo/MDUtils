@@ -3,10 +3,10 @@ pacage maxdistructo.utils.obj
 interface Unit{
 
 var value : Any
-val unitLabel : String
+val unit : String
 
 fun toString() : String{
-  return value + unitLabel
+  return value + unit
 }
 
 }
